@@ -1,0 +1,154 @@
+root@41c3803946ab:~/opentofu# go test ./...
+go: downloading github.com/go-test/deep v1.0.3
+go: downloading github.com/hashicorp/consul/sdk v0.8.0
+go: downloading github.com/golang/mock v1.6.0
+go: downloading cloud.google.com/go/kms v1.15.0
+go: downloading github.com/apparentlymart/go-dump v0.0.0-20190214190832-042adf3cf4a0
+go: downloading github.com/Netflix/go-expect v0.0.0-20220104043353-73e0943537d2
+go: downloading github.com/zclconf/go-cty-debug v0.0.0-20191215020915-b22d67c1ba0b
+go: downloading github.com/dylanmei/winrmtest v0.0.0-20210303004826-fbc9ae56efb6
+go: downloading github.com/creack/pty v1.1.18
+go: downloading github.com/antchfx/xmlquery v1.3.5
+go: downloading github.com/antchfx/xpath v1.1.10
+ok  	github.com/opentofu/opentofu/cmd/tofu	0.099s
+ok  	github.com/opentofu/opentofu/internal/addrs	0.130s
+ok  	github.com/opentofu/opentofu/internal/backend	0.036s
+ok  	github.com/opentofu/opentofu/internal/backend/init	0.059s
+ok  	github.com/opentofu/opentofu/internal/backend/local	0.627s
+ok  	github.com/opentofu/opentofu/internal/backend/remote	1.254s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/azure	0.053s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/consul	0.135s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/cos	0.101s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/gcs	0.051s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/http	7.355s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/inmem	0.068s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/kubernetes	0.081s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/oss	0.028s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/pg	0.044s
+ok  	github.com/opentofu/opentofu/internal/backend/remote-state/s3	2.376s
+ok  	github.com/opentofu/opentofu/internal/builtin/providers/tf	0.061s
+ok  	github.com/opentofu/opentofu/internal/builtin/provisioners/file	0.017s
+ok  	github.com/opentofu/opentofu/internal/builtin/provisioners/local-exec	0.193s
+ok  	github.com/opentofu/opentofu/internal/builtin/provisioners/remote-exec	2.029s
+ok  	github.com/opentofu/opentofu/internal/checks	0.062s
+?   	github.com/opentofu/opentofu/internal/cloudplugin	[no test files]
+ok  	github.com/opentofu/opentofu/internal/cloud	0.078s
+ok  	github.com/opentofu/opentofu/internal/cloud/cloudplan	0.076s
+?   	github.com/opentofu/opentofu/internal/cloudplugin/cloudproto1	[no test files]
+?   	github.com/opentofu/opentofu/internal/cloudplugin/mock_cloudproto1	[no test files]
+ok  	github.com/opentofu/opentofu/internal/cloud/e2e	12.396s
+ok  	github.com/opentofu/opentofu/internal/cloudplugin/cloudplugin1	0.024s
+?   	github.com/opentofu/opentofu/internal/command/jsonformat/collections	[no test files]
+?   	github.com/opentofu/opentofu/internal/command/jsonformat/computed	[no test files]
+?   	github.com/opentofu/opentofu/internal/command/jsonformat/jsondiff	[no test files]
+?   	github.com/opentofu/opentofu/internal/command/jsonformat/structured	[no test files]
+?   	github.com/opentofu/opentofu/internal/command/testing	[no test files]
+?   	github.com/opentofu/opentofu/internal/e2e	[no test files]
+?   	github.com/opentofu/opentofu/internal/experiments	[no test files]
+?   	github.com/opentofu/opentofu/internal/getmodules	[no test files]
+?   	github.com/opentofu/opentofu/internal/grpcwrap	[no test files]
+?   	github.com/opentofu/opentofu/internal/lang/marks	[no test files]
+?   	github.com/opentofu/opentofu/internal/lang/types	[no test files]
+ok  	github.com/opentofu/opentofu/internal/command	58.425s
+ok  	github.com/opentofu/opentofu/internal/command/arguments	0.082s
+ok  	github.com/opentofu/opentofu/internal/command/cliconfig	0.072s
+ok  	github.com/opentofu/opentofu/internal/command/clistate	0.081s
+ok  	github.com/opentofu/opentofu/internal/command/e2etest	30.979s
+ok  	github.com/opentofu/opentofu/internal/command/format	0.073s
+ok  	github.com/opentofu/opentofu/internal/command/jsonchecks	0.068s
+ok  	github.com/opentofu/opentofu/internal/command/jsonconfig	0.076s
+ok  	github.com/opentofu/opentofu/internal/command/jsonformat	0.151s
+ok  	github.com/opentofu/opentofu/internal/command/jsonformat/computed/renderers	0.116s
+ok  	github.com/opentofu/opentofu/internal/command/jsonformat/differ	0.115s
+ok  	github.com/opentofu/opentofu/internal/command/jsonformat/structured/attribute_path	0.024s
+ok  	github.com/opentofu/opentofu/internal/command/jsonfunction	0.165s
+ok  	github.com/opentofu/opentofu/internal/command/jsonplan	0.128s
+ok  	github.com/opentofu/opentofu/internal/command/jsonprovider	0.096s
+ok  	github.com/opentofu/opentofu/internal/command/jsonstate	0.101s
+ok  	github.com/opentofu/opentofu/internal/command/views	3.270s
+ok  	github.com/opentofu/opentofu/internal/command/views/json	0.120s
+ok  	github.com/opentofu/opentofu/internal/command/webbrowser	0.035s
+ok  	github.com/opentofu/opentofu/internal/command/workdir	0.011s
+ok  	github.com/opentofu/opentofu/internal/communicator	1.047s
+ok  	github.com/opentofu/opentofu/internal/communicator/remote	0.010s [no tests to run]
+ok  	github.com/opentofu/opentofu/internal/communicator/shared	0.018s
+ok  	github.com/opentofu/opentofu/internal/communicator/ssh	3.383s
+ok  	github.com/opentofu/opentofu/internal/communicator/winrm	0.056s
+ok  	github.com/opentofu/opentofu/internal/configs	0.562s
+ok  	github.com/opentofu/opentofu/internal/configs/configload	0.147s
+ok  	github.com/opentofu/opentofu/internal/configs/configschema	0.025s
+ok  	github.com/opentofu/opentofu/internal/configs/hcl2shim	0.043s
+ok  	github.com/opentofu/opentofu/internal/copy	0.040s
+ok  	github.com/opentofu/opentofu/internal/dag	2.153s
+ok  	github.com/opentofu/opentofu/internal/depsfile	0.117s
+ok  	github.com/opentofu/opentofu/internal/didyoumean	0.010s
+ok  	github.com/opentofu/opentofu/internal/genconfig	0.093s
+ok  	github.com/opentofu/opentofu/internal/getproviders	4.271s
+ok  	github.com/opentofu/opentofu/internal/helper/slowmessage	0.106s
+ok  	github.com/opentofu/opentofu/internal/httpclient	0.030s
+ok  	github.com/opentofu/opentofu/internal/initwd	0.147s
+ok  	github.com/opentofu/opentofu/internal/instances	0.034s
+ok  	github.com/opentofu/opentofu/internal/ipaddr	0.023s
+ok  	github.com/opentofu/opentofu/internal/lang	0.068s
+ok  	github.com/opentofu/opentofu/internal/lang/blocktoattr	0.006s
+2024/01/12 21:59:29 [DEBUG] the result of decoding the provided string is not valid UTF-8: [194 23 158]
+--- FAIL: TestFileExists (0.00s)
+    --- FAIL: TestFileExists/FileExists(".",_cty.StringVal("testdata/unreadable/foobar")) (0.00s)
+        filesystem_test.go:274: succeeded; want error
+    --- FAIL: TestFileExists/FileExists(".",_cty.StringVal("testdata/unreadable/foobar").Mark(marks.Sensitive)) (0.00s)
+        filesystem_test.go:274: succeeded; want error
+FAIL
+FAIL	github.com/opentofu/opentofu/internal/lang/funcs	0.361s
+ok  	github.com/opentofu/opentofu/internal/lang/globalref	0.054s
+ok  	github.com/opentofu/opentofu/internal/legacy/helper/acctest	0.005s
+ok  	github.com/opentofu/opentofu/internal/legacy/helper/hashcode	0.003s
+?   	github.com/opentofu/opentofu/internal/modsdir	[no test files]
+ok  	github.com/opentofu/opentofu/internal/legacy/helper/schema	0.125s
+ok  	github.com/opentofu/opentofu/internal/legacy/tofu	0.045s
+ok  	github.com/opentofu/opentofu/internal/logging	0.004s
+ok  	github.com/opentofu/opentofu/internal/moduledeps	0.011s
+?   	github.com/opentofu/opentofu/internal/plans/internal/planproto	[no test files]
+ok  	github.com/opentofu/opentofu/internal/moduletest	0.062s
+ok  	github.com/opentofu/opentofu/internal/plans	0.083s
+ok  	github.com/opentofu/opentofu/internal/plans/objchange	0.095s
+ok  	github.com/opentofu/opentofu/internal/plans/planfile	0.092s
+ok  	github.com/opentofu/opentofu/internal/plugin	0.034s
+ok  	github.com/opentofu/opentofu/internal/plugin/convert	0.058s
+?   	github.com/opentofu/opentofu/internal/plugin/mock_proto	[no test files]
+ok  	github.com/opentofu/opentofu/internal/plugin/discovery	0.013s
+?   	github.com/opentofu/opentofu/internal/plugin6/mock_proto	[no test files]
+?   	github.com/opentofu/opentofu/internal/provider-simple	[no test files]
+ok  	github.com/opentofu/opentofu/internal/plugin6	0.033s
+?   	github.com/opentofu/opentofu/internal/provider-simple/main	[no test files]
+?   	github.com/opentofu/opentofu/internal/provider-simple-v6	[no test files]
+ok  	github.com/opentofu/opentofu/internal/plugin6/convert	0.050s
+?   	github.com/opentofu/opentofu/internal/provider-simple-v6/main	[no test files]
+?   	github.com/opentofu/opentofu/internal/provisioner-local-exec/main	[no test files]
+?   	github.com/opentofu/opentofu/internal/provisioners	[no test files]
+ok  	github.com/opentofu/opentofu/internal/providercache	0.216s
+ok  	github.com/opentofu/opentofu/internal/providers	0.063s
+?   	github.com/opentofu/opentofu/internal/registry/test	[no test files]
+ok  	github.com/opentofu/opentofu/internal/refactoring	0.056s
+?   	github.com/opentofu/opentofu/internal/replacefile	[no test files]
+ok  	github.com/opentofu/opentofu/internal/registry	2.065s
+ok  	github.com/opentofu/opentofu/internal/registry/regsrc	0.037s
+ok  	github.com/opentofu/opentofu/internal/registry/response	0.035s
+ok  	github.com/opentofu/opentofu/internal/repl	0.067s
+ok  	github.com/opentofu/opentofu/internal/states	0.034s
+ok  	github.com/opentofu/opentofu/internal/states/remote	0.041s
+ok  	github.com/opentofu/opentofu/internal/states/statefile	0.059s
+?   	github.com/opentofu/opentofu/internal/tfplugin5	[no test files]
+?   	github.com/opentofu/opentofu/internal/tfplugin6	[no test files]
+ok  	github.com/opentofu/opentofu/internal/states/statemgr	2.860s
+ok  	github.com/opentofu/opentofu/internal/terminal	0.010s
+ok  	github.com/opentofu/opentofu/internal/tfdiags	0.009s
+?   	github.com/opentofu/opentofu/tools/loggraphdiff	[no test files]
+?   	github.com/opentofu/opentofu/tools/protobuf-compile	[no test files]
+ok  	github.com/opentofu/opentofu/internal/tofu	7.947s
+ok  	github.com/opentofu/opentofu/internal/tofumigrate	0.039s
+ok  	github.com/opentofu/opentofu/version	0.013s
+FAIL
+root@41c3803946ab:~/opentofu# echo $?
+1
+root@41c3803946ab:~/opentofu# 
+
